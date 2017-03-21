@@ -1,0 +1,17 @@
+{
+ "JsonStyles":[
+    {"styleName":"color"},
+    {"styleName":"font-size"},
+    {"styleName":"border"},
+    {"styleName":"border-top"},
+    {"styleName":"border-right"},
+    {"styleName":"border-bottom"},
+    {"styleName":"border-left"},
+    {"styleName":"text-shadow"},
+    {"styleName":"margin"},
+    {"styleName":"margin-left"},
+    {"styleName":"margin-right"},
+    {"styleName":"margin-top"},
+    {"styleName":"margin-bottom"}
+ ]
+}

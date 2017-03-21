@@ -1,3 +1,5 @@
 <div class="form-group">
-    <input type="text" />:<input type="number" #value [(ngModel)]="FontSize" name="size" />
+    <select class="form-control">
+        <option *ngFor="let jsonstyle of JsonStyles" >{{jsonstyle.styleName}}</option>
+    </select>
 </div>
