@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import{MenuLink} from './menulinks.component';
 
 @Component({
@@ -10,18 +10,28 @@ import{MenuLink} from './menulinks.component';
 })
 
 export class MenuComponent2 implements OnInit {
-@Input() menulinks: MenuLink[];
-size:number;
-color:string;
-  
+menulinks: MenuLink[];
+MenuName: string = "MenuLink";
+Color:string = "green";
+FontSize:number = 12;
+Border:string;
+BorderTop:string;
+BorderBottom:string;
+BorderLeft:string;
+BorderRight:string;
+TextShadow:string;
+MarginLeft:number;
+MarginRight:number;
+MarginTop:number;
+MarginBottom:number;
+PaddingLeft:number;
+PaddingRight:number;
+PaddingTop:number;
+PaddingBottom:number;  
+
   constructor() {
-    // Do stuff
-    this.color = 'pink';
-        this.size = 16;
-    var link1 = new MenuLink();
-    
-    this.menulinks = [link1];
-    
+  
+
    
   }
 
@@ -34,7 +44,7 @@ color:string;
     }
   }
 
-  FontSize(size:number){
+  /*FontSize(size:number){
     console.log("returned "+ size );
     return size;
   }
@@ -42,7 +52,7 @@ color:string;
   changeFontSize(fontSize:number){
     console.log("changed to "+ fontSize );
     this.FontSize(fontSize);
-  }
+  }*/
 
   changeTab(tab:string){
     event.preventDefault();
